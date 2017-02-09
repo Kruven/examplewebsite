@@ -1,0 +1,793 @@
+body {
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+#background {
+    width: 966px;
+	margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 300px #000;
+}
+
+#header ul, .contentArea ul, #footer ul {
+    padding: 0;
+    margin: 0;
+}
+#header li, .contentArea li, #footer li {
+    list-style: none;
+    cursor: default;
+}
+
+ul .bulletPoints li, .blogPost li {
+    margin: 10px 0 10px 10px;
+    background: url(/includes/images/bulletPoint.png) no-repeat;
+}
+ul .bulletPoints li b, .blogPost b {
+    font-size: 14px;
+    font-weight: 900;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0 0 0;
+}
+
+/* ========== ========== HEADER AREA ========== ========== */
+/* ----- Top Header ----- */
+#topHeader {
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    width: 960px;
+    height: 40px;
+    box-shadow: inset 0px 0px 23px 2px rgba(0,0,0,0.44); 
+    
+background: rgb(0,137,191); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(0,137,191,1) 0%, rgba(0,103,193,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,137,191,1)), color-stop(100%,rgba(0,103,193,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,137,191,1) 0%,rgba(0,103,193,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,137,191,1) 0%,rgba(0,103,193,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,137,191,1) 0%,rgba(0,103,193,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,137,191,1) 0%,rgba(0,103,193,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0089bf', endColorstr='#0067c1',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* Top Left Header */
+#topHeader .leftHeader {
+    float: left;
+}
+#topHeader .leftHeader p {
+    line-height: 25px;
+    float: left;
+    margin: 5px 0 0 5px;
+    color: #fff;
+}
+
+#facebookButton, #twitterButton {
+    float: left;
+    padding: 5px 0 0 5px;
+}
+#facebookButton:hover, #twitterButton:hover {
+    cursor: pointer;
+}
+
+/* Top Right Header */
+#topHeader .rightHeader {
+    height: 40px;
+    float: right;
+}
+#topHeader .rightHeader p {
+    margin: 0 10px 0 0;
+    color: white;
+    line-height: 40px;
+    float: right;
+}
+#topHeader .rightHeader a {
+    color: white;
+}
+#topHeader .rightHeader a:visited {
+    color: white;
+}
+
+#phone {
+    margin: 8px 8px 7px 8px;
+    float: right;
+}
+
+/* ----- Bottom Header ----- */
+#bottomHeader {
+    background: url(/includes/images/background.png);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    width: 960px;
+    height: 259px;
+}
+#bottomHeader .qSlide {
+    position: relative;
+    top: -161px;
+    left: 289px;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+#headerSlider {
+    width: 465px;
+    height: 219px;
+    margin: 20px auto 20px auto;
+}
+
+/* Navigation Bar */
+#navBar {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: url(/includes/images/background.png);
+    background-repeat: repeat;
+    border: 3px solid white;
+    width: 960px;
+    height: 50px;
+    box-shadow: inset 0px 0px 23px 2px rgba(0,0,0,0.44); 
+}
+#navBar li {
+    float: left;
+}
+#navBar a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    margin-left: 40px;
+}
+#navBar a:hover {
+    text-shadow: 0 3px 10px #fff;
+}
+
+
+/* ========== ========== FOOTER ========== ========== */
+#footer a {
+    text-decoration: none;
+    color: #c1c1c1;
+    font-size: 14px;
+}
+#footer a:hover {
+    color: #fff;
+}
+
+/* Main column */
+#footer .mainColumn1 {
+    float: left; 
+    width: 50%;
+}
+#footer .mainColumn2 {
+    float: right; 
+    width: 50%;
+}
+#footer .usefulLinks, #footer .logoArea {
+    padding: 20px;
+}
+#footer .usefulLinks a {
+    padding-left: 10px;
+}
+#footer .logoArea li {
+    padding: 40px;
+}
+
+/* Other links */
+#footer .otherLinks-left {
+    float: left; 
+    color: #c1c1c1; 
+    padding-left: 20px; 
+    width: 60%;
+}
+#footer .otherLinks-right {
+    float: right; 
+    color: #c1c1c1; 
+    padding-right: 20px; 
+}
+
+
+/* ========== ========== HOME PAGE ========== ========== */
+
+/* ----- Services ----- */
+#servicesArea {
+    padding: 0;
+    margin-left: -16px;
+    width: 960px;
+    height: 308px;
+}
+#servicesArea li {
+    float: left;
+    margin-top: 23px;
+    margin-left: 36px;
+}
+
+#servicesArea #pcSlider, #servicesArea #laptopSlider, #servicesArea #macSlider, #servicesArea #mobileSlider {
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px #000;
+}
+
+#servicesArea .nextButton {
+    background: url(/includes/images/background.png);
+    position: relative;
+    border: 2px solid #fff;
+    left: 16px;
+    top: -20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #000;
+    transition: all .5s ease-in-out;
+    z-index: 102;
+}
+#servicesArea .nextButton:after {
+    content: "";
+    position: relative;
+    top: 7px;
+    left: 13px;
+    border-style: solid;
+    border-width: 10px 0px 10px 13px;
+    border-color: transparent #fff;
+    display: block;
+    width: 0;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+}
+#servicesArea .nextButton:hover {
+    cursor: pointer;
+    border-color: rgb(0,137,191);
+}
+#servicesArea .nextButton:hover:after {
+    border-color: transparent rgb(0,137,191);
+}
+
+.infoButton {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: url(/includes/images/background.png);
+    position: relative;
+    border: 2px solid #fff;
+    width: 80px;
+    height: 25px;
+    box-shadow: 0 0 10px #000;
+    transition: all .5s ease-in-out;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    z-index: 102;
+}
+#servicesArea .infoButton {
+    left: 76px;
+    top: -54px;
+}
+.infoButton:hover {
+    cursor: pointer;
+    color: rgb(0,137,191);
+    border-color: rgb(0,137,191);
+}
+.plainLink {
+    text-decoration: none;
+}
+.plainLink:active {
+    text-decoration: none;
+}
+
+/* Page Content */
+.contentArea {
+    background: #fff;
+    border: 3px solid #fff;
+    border-top: none;
+    width: 960px;
+    height: auto;
+    min-height: 500px;
+    box-shadow: inset 0px 0px 23px 2px rgba(0,0,0,0.44);
+    padding-bottom: 20px; 
+}
+.pageContent {
+    width: 912px;
+    height: auto;
+}
+.pageContent p {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+/* Page Text */
+.pageText, .businessServicesText, .healthCentre-readMore {
+    width: 592px;
+    float: left;
+}
+.healthCentre-readMore h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 40px;  
+}
+.healthCentre-readMore p {
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Sidebars */
+.sidebar {
+    width: 300px;
+    float: right;
+}
+.sidebar img {
+    margin: 0 auto 50px auto;
+    display: block;
+}
+
+
+
+
+
+/* Footer */
+#footer {
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    width: 960px;
+    height: 224px;
+    
+    background: rgb(63,63,63); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(63,63,63,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,63,63,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(63,63,63,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+/* ========== ========== PRODUCTS & SERVICES PAGE ========== ========== */
+.pageText .servicesArea li {
+    height: 250px;
+}
+.pageText .servicesArea li img {
+    float: left;
+}
+.pageText .servicesArea li .serviceInfo {
+    width: 381px;
+    height: auto;
+    float: right;
+}
+.pageText .servicesArea li .serviceInfo li h1 {
+    margin-top: 0;
+}
+
+.pageText .servicesArea li .serviceInfo li .infoButton {
+    float: right;
+}
+
+
+/* ========== ========== HEALTH CENTRE ========== ========== */
+#diagnosticForm {
+    height: 30px;
+}
+
+#diagnostic {
+    margin-top: 10px;
+    width: 590px;
+    height: auto;
+}
+#diagnostic p {
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+}
+
+#diagnoseSelect {
+    border: 1px solid rgb(0,137,191);
+    width: 400px; 
+    height: 29px; 
+    padding: 4px;
+    margin-right: 10px;
+    float: left;
+}
+
+
+#healthCentreSidebar img {
+    margin: 20px auto 20px auto;
+}
+
+#healthCentreSidebar div {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 250px;
+}
+
+#healthCentreSidebar div .title {
+    background: url(/includes/images/background.png);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    border: 2px solid #fff;
+    width: 240px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    color: #fff;
+    box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.44);
+    
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#healthCentreSidebar div .title:hover {
+    cursor: pointer;
+    text-shadow: 0 3px 10px #fff;
+}
+
+#healthCentreSidebar div div {
+    width: 250px;
+    display: none;
+    overflow: hidden;
+}
+
+#healthCentreSidebar div p {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+}
+
+#healthCentreSidebar div a {
+    font-family: Arial;
+    float: right;
+    font-size: 12px;
+}
+
+/* ========== ========== CONTACT US ========== ========== */
+.contactForm {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.contactForm ul {
+    width: 515px;
+    height: 28px;
+    padding-bottom: 15px;
+}
+.contactForm ul .textarea {
+    height: 178px;
+}
+.contactForm .left1, .contactForm .left2 {
+    float: left;
+    text-align: right;
+    color: #000;
+    width: 200px;
+    height: 22px;
+    line-height: 28px;
+}
+.contactForm .left1 {
+    color: #000;
+}
+.contactForm .left2 {
+    color: rgb(0,137,191);
+}
+.contactForm .left1 p, .contactForm .left2 p {
+    font-size: 22px;
+    padding-right: 10px;
+    margin: 0;
+}
+.contactForm .inputContainer {
+    border: 1px solid rgb(0,137,191);
+    background: #fff;
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+    height: 28px;
+    width: 309px;
+}
+.contactForm .textareaContainer {
+    border: 1px solid rgb(0,137,191);
+    background: #fff;
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+    height: 168px;
+    width: 309px;
+}
+.contactForm .right {
+    float: right;
+}
+.contactForm .right input {
+    background: transparent;
+    border: 0;
+    height: 20px;
+    width: 300px;
+    padding: 4px 0 0 5px;
+    outline-width: 0;
+}
+.contactForm .right select {
+    background: transparent;
+    border: 0;
+    height: 28px;
+    width: 309px;
+    padding-left: 5px;
+    outline-width: 0;
+}
+.contactForm .right textarea {
+    background: transparent;
+    border: 0;
+    outline-width: 0;
+}
+.contactForm .buttonsContainer {
+    float: right;
+    height: 20px;
+    width: 300px;
+}
+
+/* ========== ========== BUSINESS SERVICES ========== ========== */
+.businessServicesText .infoButton {
+    float: right;
+}
+.businessServicesText h2 {
+    margin-top: 50px;
+}
+
+/* ========== ========== BLOG POSTS ========== ========== */
+.blogPosts {
+    width: 668px;
+    float: right;
+}
+.blogPosts ul {
+    background: url(/includes/images/background.png);
+    border: 2px solid #fff;
+    width: 510px;
+    height: 150px;
+    color: #fff;
+    box-shadow: 0 0 10px #000;
+    margin: 26px 0 50px 0;
+}
+.blogPosts ul .thumbnail {
+    width: 107px;
+    height: 150px;
+    float: left;
+    padding: 20px 8px 0 20px;
+    pointer-events: none;
+}
+.blogPosts ul .content {
+    width: 349px;
+    float: right;
+    padding-right: 22px;
+    pointer-events: none;
+}
+.blogPosts h1 {
+    font-size: 20px;
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+.blogPosts h2 {
+    font-size: 14px;
+    padding: 22px 0 0 0;
+    margin: 0;
+}
+.blogPosts p {
+    font-size: 12px;
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+.blogPosts img {
+    border: 2px solid #fff;
+    width: 107px;
+    height: 107px;
+}
+
+/* Blog page choices */
+.pageChoiceContainer {
+    width: 100%;
+    height: 18px;
+    float: left;
+    margin: 10px 0 0 10px;
+    line-height: 18px;
+}
+.pageChoice {
+    float: right;
+    color: #000;
+    font-size: 14px;
+    text-decoration-line: none;
+    margin: 0 5px 0 5px;
+}
+.pageChoice:hover {
+    color: #808080;
+}
+.currentPageChoice {
+    font-weight: bold;
+    float: right;
+    color: #000;
+    font-size: 16px;
+    text-decoration-line: none;
+    margin: 0 5px 0 5px;
+}
+.pageChoiceDots {
+    float: right;
+    color: #000;
+    font-size: 14px;
+    text-decoration-line: none;
+    margin: 0 5px 0 5px;
+}
+
+/* ========== ========== INTERESTING STUFF SIDEBAR ========== ========== */
+.interestingStuff {
+    margin-top: 26px;
+    width: 200px;
+    float: left;
+}
+.interestingStuff ul li {
+    margin: 10px 0 10px 10px;
+    background: url(/includes/images/star.png) no-repeat;
+    height: 25px;
+    width: 200px;
+    float: left;
+}
+.interestingStuff img {
+    margin: 0 auto 10px auto;
+    display: block;
+}
+.interestingStuff li a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    color: #000;
+    padding-left: 30px;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+.interestingStuff li a:hover {
+    color: rgb(0,137,191);
+}
+
+/* ========== ========== BLOG POST ========== ========== */
+.blogPost {
+    width: 712px;
+    float: right;
+}
+.blogPost h1 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    padding-left: 10px;
+    margin: 10px 0 20px 0;
+}
+.blogPost h2 {
+    font-weight: 100;
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 10px 0 0 0;
+}
+.blogPost div {
+    font-size: 14px;
+}
+.blogPost img {
+    border: 1px solid #000;
+    margin: 0 0 10px 10px;
+    float: right;
+}
+
+/* ========== ========== REQUEST A CALLBACK ========== ========== */
+#callbackContainer {
+    border: 3px inset rgb(0,137,191);
+    background: #fff;
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 200;
+    display: none;
+}
+#callbackContainer #exitButton {
+    position: absolute;
+    top: -12px;
+    left: 662px;
+}
+#callbackContainer #requestCallback {
+    padding: 20px 0 50px 20px;
+}
+#callbackContainer ul {
+    padding: 20px 20px 20px 20px;
+}
+#callbackContainer li {
+    padding: 10px 10px 10px 125px;
+    height: 35px;
+    width: 400px;
+}
+
+#exitButton:hover {
+    cursor: pointer;
+}
+
+/* ========== ========== FANCY FORM ========== ========== */
+/* Form */
+.fancyForm {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.fancyForm ul {
+    width: 515px;
+    height: 28px;
+    padding-bottom: 15px;
+}
+.fancyForm li {
+    float: left;
+    text-align: right;
+    color: #000;
+    width: 200px;
+    height: 22px;
+    line-height: 28px;
+}
+/* Left Area (Text) */
+.fancyForm p {
+    float: left;
+    font-size: 22px;
+    padding-right: 10px;
+    margin: 0;
+}
+.fancyForm li:nth-child(even) p {
+    color: #000;
+}
+.fancyForm li:nth-child(odd) p {
+    color: rgb(0,137,191);
+}
+/* Right Area (Input) */
+.fancyForm .inputContainer {
+    border: 1px solid rgb(0,137,191);
+    background: #fff;
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+    height: 28px;
+    width: 309px;
+    float: right;
+}
+.fancyForm li input[type=text] {
+    background: transparent;
+    border: 0;
+    height: 20px;
+    width: 300px;
+    padding: 4px 0 0 5px;
+    outline-width: 0;
+}
+.fancyForm li select {
+    background: transparent;
+    border: 0;
+    height: 28px;
+    width: 309px;
+    padding-left: 5px;
+    outline-width: 0;
+}
+.fancyForm .textareaContainer {
+    border: 1px solid rgb(0,137,191);
+    background: #fff;
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+    height: 168px;
+    width: 309px;
+    float: right;
+}
+.fancyForm li textarea {
+    background: transparent;
+    border: 0;
+    outline-width: 0;
+}
+.fancyForm .buttonsContainer {
+    float: right;
+    height: 20px;
+    width: 300px;
+}
